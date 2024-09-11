@@ -63,9 +63,63 @@ header {
 .box-shadow1 {
     box-shadow: -12.78px 7.3px 14.61px 0px #0000000A;
 }
+.box-shadow2 {
+    box-shadow: 9px -20px 14.61px 0px #0000000A;
+}
 .shadow-email {
     box-shadow: 0px 4px 4px 0px #FF941566;
 }
 .bg-size {
     background-size: 150px;
+}
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+.popup {
+    background: linear-gradient(180deg, #FFFFFF 57.35%, #FFDDB5 155.25%);
+
+}
+
+.faq-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.faq-question {
+    cursor: pointer;
+    padding: 15px;
+}
+
+.faq-answer {
+    display: none;
+    padding:0px 15px 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .desktop {
+    display: none;
+ }
+ .px-10 {
+    padding-left: 10px  !important;
+    padding-right: 10px !important;
+ }
+ .text-3xl {
+    font-size: 20px !important;
+ }
+ .mask {
+    width: 50px;
+ }
+ .text-2xl {
+    font-size: 15px !important;
+ }
+ .mobile {
+      display: block;
+ }
 }

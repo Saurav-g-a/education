@@ -28,54 +28,78 @@
 </head>
 
 <body>
-    <header class="bg-white z-[999] relative">
-        <div class="flex justify-between items-center p-4 bg-white max-w-screen-xl mx-auto">
-            <div class="flex items-center space-x-4">
-                <img src="./image/logo.png" alt="Logo" class="h-8">
-                <div class="relative">
-                    <button id="category-button" class="flex items-center space-x-2">
-                        <img src="./image/icon.png" alt="Category" class="h-6">
-                        <p>Category</p>
-                    </button>
-                    <div id="category-menu"
-                        class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+    <header class="bg-white z-[999] fixed w-full">
+        <div class="desktop">
+            <div class="flex justify-between items-center p-4 bg-white max-w-screen-xl mx-auto ">
+                <div class="flex items-center space-x-4">
+                    <img src="./image/logo.png" alt="Logo" class="h-8 border-r pr-5 border-[#333]">
+                    <div class="relative ">
+                        <button id="category-button" class="flex items-center space-x-2">
+                            <img src="./image/icon.png" alt="Category" class="h-6">
+                            <p class="font-Poppins">Category</p>
+                        </button>
+                        <div id="category-menu"
+                            class="dropdown-menu absolute popup left-0 mt-5 w-60 box-shadow2 border border-white rounded-md px-2">
+                            <img src="./image/Union1.png" class="mt-[-17px]" alt="popup" />
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b-2 border-[#00000021] font-Poppins font-normal">About Us</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b-2 border-[#00000021] font-Poppins font-normal">Blogs</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b-2 border-[#00000021] font-Poppins font-normal">News & Events</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b-2 border-[#00000021] font-Poppins font-normal">Experience Centre</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b-2 border-[#00000021] font-Poppins font-normal">Contact Us</a>
+                        </div>
                     </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <p class="font-Poppins text-[#FF9415]">Home</p>
+                    <div class="relative">
+                        <button id="programs-button" class="flex items-center font-Poppins">
+                            Programs <img src="./image/down.png" class="ml-1" alt="down"/>
+                        </button>
+                        <div id="programs-menu"
+                        class="dropdown-menu absolute popup left-0 mt-5 w-48 box-shadow2 border border-white rounded-md px-2">
+                        <img src="./image/Union1.png" class="mt-[-17px]" alt="popup" />
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <button id="universities-button" class="flex items-center font-Poppins">
+                            Universities <img src="./image/down.png" class="ml-1" alt="down"/>
+                        </button>
+                        <div id="universities-menu"
+                        class="dropdown-menu absolute popup left-0 mt-5 w-48 box-shadow2 border border-white rounded-md px-2">
+                        <img src="./image/Union1.png" class="mt-[-17px]" alt="popup" />
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+                        </div>
+                    </div>
+                    <p><img src="./image/Vector.png" alt="Logo" class="h-6"></p>
+                    <p class="loginButton bg-[#FF9415] text-white px-5 cursor-pointer py-2 rounded-full">LOGIN</p>
                 </div>
             </div>
-            <div class="flex items-center space-x-4">
-                <p>Home</p>
-                <div class="relative">
-                    <button id="programs-button" class="flex items-center">
-                        Programs
-                    </button>
-                    <div id="programs-menu"
-                        class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+        </div>
+        <div class="mobile">
+            <div class="flex justify-between items-center p-4 bg-white max-w-screen-xl mx-auto ">
+                    <img src="./image/logo.png" alt="Logo" class="h-8 border-r pr-5 border-[#333]">
+                    <div class="relative ">
+                        <button id="category-button" class="flex items-center space-x-2">
+                            <img src="./image/icon.png" alt="Category" class="h-6">
+                            <p class="font-Poppins">Category</p>
+                        </button>
+                        <div id="category-menu"
+                            class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+                        </div>
                     </div>
-                </div>
-                <div class="relative">
-                    <button id="universities-button" class="flex items-center">
-                        Universities
-                    </button>
-                    <div id="universities-menu"
-                        class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
-                    </div>
-                </div>
-                <p><img src="./image/Vector.png" alt="Logo" class="h-6"></p>
-                <p class="loginButton bg-[#FF9415] text-white px-5 cursor-pointer py-2 rounded-full">LOGIN</p>
             </div>
         </div>
     </header>
 
-    <div class="bg-[#FF9415]">
+    <div class="bg-[#FF9415] pt-[60px]">
         <div class="scrolling-text text-white p-4 rounded">
             <span>This is scrolling text created with CSS animations instead of the deprecated tag.</span>
         </div>
@@ -95,7 +119,7 @@
                             <div class="flex w-[60%] bg-white p-2 mb-3 justify-between rounded-full">
                                 <div class="relative">
                                     <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
-                                        <p class="text-white">Master</p>
+                                        <p class="text-white">Master</p><img src="./image/down.png" class="ml-1" alt="down"/>
                                     </button>
                                     <div id="Master-menu"
                                         class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
@@ -125,7 +149,7 @@
                             <div class="flex w-[60%] bg-white p-2 mb-3 justify-between rounded-full">
                                 <div class="relative">
                                     <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
-                                        <p class="text-white">Master</p>
+                                        <p class="text-white">Master </p><img src="./image/down.png" class="ml-1" alt="down"/>
                                     </button>
                                     <div id="Master-menu"
                                         class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
@@ -193,7 +217,7 @@
     </div>
 
     <div class=" max-w-screen-xl mx-auto">
-        <div class="grid grid-cols-2 gap-4 my-8">
+        <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4 my-8">
             <div class="col-span-1">
                 <div class="bg-cover bg-no-repeat bg-[url('./image/doc.png')] flex h-[280px] rounded-[20px]">
                     <div class="self-center pl-8">
@@ -232,7 +256,7 @@
     </div>
 
     <div class="max-w-screen-xl mx-auto py-10">
-        <div class="grid grid-cols-5 gap-2 pt-10">
+        <div class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 gap-2 pt-10">
             <div class="col-span-1">
                 <div class="border text-center box-shadow border-[#DBDBDB] p-3 rounded-lg mb-[23%]">
                     <img src="./image/education.png" class="mx-auto -mt-[24%]" alt="educations" />
@@ -351,21 +375,21 @@
             </div>
             <div class="grid grid-cols-12 gap-2 pt-16">
                 <div class="col-span-4 text-center">
-                    <img src="./image/Mask.png" class="mx-auto" alt="mask" />
+                    <img src="./image/Mask.png" class="mx-auto mask" alt="mask" />
                     <p
                         class="text-white text-center w-[20%] mx-auto mt-4 font-bold text-3xl font-Roboto border-b border-[#FF9415]">
                         30+</p>
                     <p class="text-white text-center font-bold text-2xl mt-2 font-Roboto">Online Programs</p>
                 </div>
                 <div class="col-span-4 text-center">
-                    <img src="./image/Mask1.png" class="mx-auto" alt="mask" />
+                    <img src="./image/Mask1.png" class="mx-auto mask" alt="mask" />
                     <p
                         class="text-white text-center w-[20%] mx-auto mt-4 font-bold text-3xl font-Roboto border-b border-[#FF9415]">
                         100+</p>
-                    <p class="text-white text-center font-bold text-2xl mt-2 font-Roboto">Specializations/Electives</p>
+                    <p class="text-white text-center font-bold text-2xl mt-2 font-Roboto">Specializations / Electives</p>
                 </div>
                 <div class="col-span-4 text-center">
-                    <img src="./image/Mask2.png" class="mx-auto" alt="mask" />
+                    <img src="./image/Mask2.png" class="mx-auto mask" alt="mask" />
                     <p
                         class="text-white text-center w-[20%] mx-auto mt-4 font-bold text-3xl font-Roboto border-b border-[#FF9415]">
                         50K+</p>
@@ -378,13 +402,13 @@
     <div class="max-w-screen-xl mx-auto py-10 px-10">
         <div class="flex justify-between pb-5 w-full">
             <p class="text-center text-3xl font-Roboto font-bold bg-[url(./image/labelbg.png)] bg-no-repeat pb-3 bg-right-bottom text-[#333333]">Other Universities to Consider</p>
-             <div>
+             <div class="desktop">
                  <button class="py-2 px-5 border border-[#FF9415] text-[#FF9415] rounded-full">VIEW MORE</button>
              </div>
         </div>
         <div class="grid grid-cols-12 gap-4 ">
             <div class="col-span-6">
-                <div class="border rounded-[21px] flex">
+                <div class="border rounded-[21px] lg:flex md:block">
                     <img src="./image/consider.png" class="w-[220px]" alt="consider" />
                     <div class="pl-5 self-center">
                         <p class="font-Poppins font-[600] text-[#333333]">Amity University Onlines</p>
@@ -395,7 +419,7 @@
                 </div>
             </div>
             <div class="col-span-6">
-                <div class="border rounded-[21px] flex">
+                <div class="border rounded-[21px] lg:flex md:block">
                     <img src="./image/consider.png" class="w-[220px]" alt="consider" />
                     <div class="pl-5 self-center">
                         <p class="font-Poppins font-[600] text-[#333333]">Amity University Onlines</p>
@@ -406,7 +430,7 @@
                 </div>
             </div>
             <div class="col-span-6">
-                <div class="border rounded-[21px] flex">
+                <div class="border rounded-[21px] lg:flex md:block">
                     <img src="./image/consider.png" class="w-[220px]" alt="consider" />
                     <div class="pl-5 self-center">
                         <p class="font-Poppins font-[600] text-[#333333]">Amity University Onlines</p>
@@ -417,7 +441,7 @@
                 </div>
             </div>
             <div class="col-span-6">
-                <div class="border rounded-[21px] flex">
+                <div class="border rounded-[21px] lg:flex md:block">
                     <img src="./image/consider.png" class="w-[220px]" alt="consider" />
                     <div class="pl-5 self-center">
                         <p class="font-Poppins font-[600] text-[#333333]">Amity University Onlines</p>
@@ -474,8 +498,62 @@
         </div>
         
     </div>
+<div class="bg-[url(./image/faqBanner.png)] py-10 bg-cover lg:bg-right font-Poppins">
+    <div class="flex justify-center">
+        <h1 class="font-Roboto text-center text-2xl font-bold  bg-[url(./image/labelbg.png)] bg-no-repeat pb-4 bg-right-bottom">Frequently Asked Questions?</h1>
+    </div>
+    <div class="max-w-screen-xl mx-auto py-10">
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question flex justify-between" onclick="toggleAnswer(1)">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+                    <div class="flex self-center">
+                        <img src="./image/faq.png" class="w-[40px]" alt="faq" />
+                    </div>
+                </div>
+                <div id="answer1" class="faq-answer">
+                    <p>Our return policy allows you to return items within 30 days of purchase. Please make sure the items are in their original condition.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question  flex justify-between" onclick="toggleAnswer(2)">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+                    <div class="flex self-center">
+                        <img src="./image/faq.png" class="w-[40px]" alt="faq" />
+                    </div>
+                </div>
+                <div id="answer2" class="faq-answer">
+                    <p>You can track your order using the tracking number provided in the confirmation email. Visit our tracking page and enter the number to see your order status.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question  flex justify-between" onclick="toggleAnswer(3)">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+                    <div class="flex self-center">
+                        <img src="./image/faq.png" class="w-[40px]" alt="faq" />
+                    </div>
+                </div>
+                <div id="answer3" class="faq-answer">
+                    <p>You can track your order using the tracking number provided in the confirmation email. Visit our tracking page and enter the number to see your order status.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question  flex justify-between" onclick="toggleAnswer(4)">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+                    <div class="flex self-center">
+                        <img src="./image/faq.png" class="w-[40px]" alt="faq" />
+                    </div>
+                </div>
+                <div id="answer4" class="faq-answer">
+                    <p>You can track your order using the tracking number provided in the confirmation email. Visit our tracking page and enter the number to see your order status.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
-    <div class="bg-[#555555]">
+    <div class="bg-[#555555] desktop">
         <div class="max-w-screen-xl mx-auto pt-10">
             <div class="grid grid-cols-12 gap-2">
                 <div class="col-span-3 pr-3">
@@ -537,7 +615,7 @@
         </div>
     </div>
 
-    <div class="bg-[#333333]">
+    <div class="bg-[#333333] desktop">
         <div class="max-w-screen-xl mx-auto py-10">
          <div class="grid grid-cols-5 gap-2">
             <div class="col-span-2">
@@ -567,7 +645,7 @@
             <img src="./image/Line.png" alt="line" />
           </div>
           <div class="max-w-screen-xl mx-auto py-2">
-            <div class="text-white flex justify-between">
+            <div class="text-white flex justify-between flex-wrap">
                 <p class="self-center font-Poppins">© Learn.Online. All rights reserved.</p>
                 <div class="flex justify-around w-[30%]">
                     <p class="self-center text-lg font-Inter">Follow us:</p>
@@ -580,49 +658,39 @@
           </div>
     </div>
 
+    <div class="mobile bg-[#333333] text-white px-4 py-4">
+        <div class="font-Inter ">
+            <p class="uppercase font-Poppins">Other Links</p>
+            <div class="flex justify-around flex-wrap py-3">
+                <p class="border-r pr-3 mb-3">About Us</p>
+                <p class="border-r pr-3 mb-3">      Contact Us </p>
+                <p class="border-r pr-3 mb-3">Courses</p>
+                <p class="border-r pr-3 mb-3">    Colleges</p>
+                <p class="border-r pr-3 mb-3">Terms and Condition</p>
+                <p class=""> Privacy & Policy</p>
+            </div>
 
-    <script>
-        $('.loop').owlCarousel({
-    center: true,
-    items:4,
-    loop:true,
-    margin:30,
-});
-        $('.banner').owlCarousel({
-            margin: 10,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 6000,
-            dots:false,
-            autoplayHoverPause: true,
-            items: 1
-        })
-        function toggleDropdown(buttonId, menuId) {
-            const button = document.getElementById(buttonId);
-            const menu = document.getElementById(menuId);
+            <hr/>
+            <div class="flex justify-between py-4">
+                <img src="./image/logo2.png" class="w-[40%] h-1/2 self-center" alt="logo2" />
+                <div>
+                    <p class="font-Inter text-lg">Follow us :</p>
+                    <div class="flex justify-around">
+                        <img src="./image/social (1).png" class="p-2" alt="facebook" />
+                        <img src="./image/social (2).png" class="p-2" alt="facebook" />
+                        <img src="./image/social (3).png" class="p-2" alt="facebook" />
+                        <img src="./image/social (4).png" class="p-2" alt="facebook" />
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <p class="text-center text-sm py-3">© 2024 Learn Online. All Rights Reserved.</p>
 
-            button.addEventListener('click', function (event) {
-                event.stopPropagation(); // Prevents the click event from propagating to the document
-                menu.classList.toggle('show');
-            });
-        }
+        </div>
+    </div>
 
-        // Initialize dropdowns
-        toggleDropdown('category-button', 'category-menu');
-        toggleDropdown('programs-button', 'programs-menu');
-        toggleDropdown('universities-button', 'universities-menu');
-        toggleDropdown('Master-button', 'Master-menu');
 
-        // Close dropdowns when clicking outside
-        document.addEventListener('click', function (event) {
-            const dropdowns = document.querySelectorAll('.dropdown-menu.show');
-            dropdowns.forEach(dropdown => {
-                if (!dropdown.contains(event.target) && !event.target.matches(`[id$='-button']`)) {
-                    dropdown.classList.remove('show');
-                }
-            });
-        });
-    </script>
+<script src="scripts.js"></script>
 </body>
 
 </html>
