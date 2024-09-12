@@ -7,6 +7,8 @@ function toggleAnswer(id) {
     }
 }
 
+
+
         $('.loop').owlCarousel({
     center: true,
     items:4,
@@ -18,7 +20,7 @@ function toggleAnswer(id) {
             items:2,
             nav:true
         },
-        600:{
+        750:{
             items:4,
             nav:false
         },

@@ -101,25 +101,69 @@ header {
     padding:0px 15px 15px;
 }
 
-
-@media only screen and (max-width: 600px) {
+#category-menu {
+    display: none; /* Initially hidden */
+}
+@media only screen and (max-width: 768px) {
  .desktop {
     display: none;
  }
+ .h-\[600px\] {
+    height: auto !important;
+    background-position: 70% !important;
+}
+.text-\[50px\] {
+    font-size: 22px !important;
+}
+ .grid.mobile.curation.grid-cols-2.gap-0 {
+
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+ }
+ .curation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+ }
+ .University {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.max-w-screen-xl {
+    padding: 0px 10px;
+}
+.h-\[280px\] {
+    height: auto !important;
+}
+.h-\[280px\] .self-center.pl-8 {
+padding: 21px 18px !important;
+background-position: right;
+}
+.rounded-\[20px\] {
+    border-radius: 8px !important;
+}
  .px-10 {
     padding-left: 10px  !important;
     padding-right: 10px !important;
  }
  .text-3xl {
     font-size: 20px !important;
+    line-height: 25px !important;
  }
  .mask {
     width: 50px;
  }
- .text-2xl {
+ .online {
     font-size: 15px !important;
+    line-height: 20px !important;
+}
+ .text-2xl {
+    margin: 0 auto;
+ }
+ .pl-5.self-center {
+    text-align: center;
+    padding: 21px 5px;
  }
  .mobile {
       display: block;
  }
+ .w-\[220px\] {
+    width: 100% !important;
+}
 }

@@ -81,26 +81,33 @@
             </div>
         </div>
         <div class="mobile">
-            <div class="flex justify-between items-center p-4 bg-white max-w-screen-xl mx-auto ">
-                    <img src="./image/logo.png" alt="Logo" class="h-8 border-r pr-5 border-[#333]">
-                    <div class="relative ">
-                        <button id="category-button" class="flex items-center space-x-2">
-                            <img src="./image/icon.png" alt="Category" class="h-6">
-                            <p class="font-Poppins">Category</p>
-                        </button>
-                        <div id="category-menu"
-                            class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
-                        </div>
-                    </div>
+            <div class="flex justify-between items-center p-4 bg-white max-w-screen-xl mx-auto">
+                <img src="./image/logo.png" alt="Logo" class="h-8 border-r pr-5 border-[#333]">
+                <div class="relative">
+                    <button  id="toggleButton" class="flex items-center space-x-2">
+                        <img src="./image/icon.png" alt="Category" class="h-6">
+                        <p class="font-Poppins">Category</p>
+                    </button>
+                </div>
+            </div>
+            <div id="toggleDiv" class=" bg-white border-t border-gray-200 mt-2 hidden z-[999999] h-[98vh] px-4">
+                <button  id="toggleButton"   class="text-right z-[9] flex justify-end w-full p-1">
+                   <img src="./image/cross 1.png" id="toggleButton" class="ml-auto" alt="cross" />
+                </button>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">About Us</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">Programs</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">Universities</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">Blogs</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">News & Events</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">Experience Centre</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">Contact Us</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 border-b-2 hover:bg-gray-100">Login</a>
             </div>
         </div>
     </header>
 
-    <div class="bg-[#FF9415] pt-[60px]">
-        <div class="scrolling-text text-white p-4 rounded">
+    <div class="bg-[#FF9415] pt-[60px] ">
+        <div class="scrolling-text text-white p-4 rounded desktop">
             <span>This is scrolling text created with CSS animations instead of the deprecated tag.</span>
         </div>
     </div>
@@ -110,29 +117,42 @@
             <div class=" flex h-full">
                 <div class="self-center flex max-w-screen-xl w-[80vw] mx-auto">
                     <div class="w-2/3 mr-auto self-center">
-                        <h1 class="text-[50px] text-white font-bold font-Roboto">Choose what's right for you, </h1>
-                        <h1 class="text-[50px] text-[#FF9415] mt-2 font-Rochester">Right Here</h1>
-                        <p class="text-white text-lg my-4">An online education platform that helps you pick online degrees
+                        <div class="desktop">
+                            <h1 class="text-[50px] text-white font-bold font-Roboto">Choose what's right for you, </h1>
+                            <h1 class="text-[50px] text-[#FF9415] mt-2 font-Rochester">Right Here</h1>
+                            <p class="text-white text-lg my-4">An online education platform that helps you pick online degrees
+                                and certificates
+                                <br /> from the best Universities.
+                            </p>
+                        </div>
+                        <div class="mobile pt-10">
+                           <p class="text-[22px] text-white font-bold font-Roboto">Choose what's right for you, <span class="text-[22px] text-[#FF9415] mt-2 font-Rochester">Right Here</span></p>
+                           <p class="text-white text-base my-4">An online education platform that helps you pick online degrees
                             and certificates
                             <br /> from the best Universities.
                         </p>
-                            <div class="flex w-[60%] bg-white p-2 mb-3 justify-between rounded-full">
-                                <div class="relative">
-                                    <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
-                                        <p class="text-white">Master</p><img src="./image/down.png" class="ml-1" alt="down"/>
-                                    </button>
-                                    <div id="Master-menu"
-                                        class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
-                                    </div>
-                                </div>
-                                <input type="text" class="w-[500px] p-2 focus:outline-none outline-none" placeholder="What do you want to learn?" />
-                                <img src="./image/Vector.svg" class="w-6 h-6 self-center" alt="search" />
-                            </div>
+                        </div>
+                         <div class="desktop">
+                             <div class="flex w-[60%] bg-white p-2 mb-3 justify-between rounded-full">
+                                 <div class="relative">
+                                     <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
+                                         <p class="text-white">Master</p><img src="./image/down.png" class="ml-1" alt="down"/>
+                                     </button>
+                                     <div id="Master-menu"
+                                         class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+                                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+                                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+                                     </div>
+                                 </div>
+                                 <input type="text" class="w-[500px] p-2 focus:outline-none outline-none" placeholder="What do you want to learn?" />
+                                 <img src="./image/Vector.svg" class="w-6 h-6 self-center" alt="search" />
+                             </div>
+                         </div>
                             <button class="uppercase rounded-full text-white bg-[#F47B47] mt-4 font-semibold border border-[#fffff] px-6 py-3">Enquire Now</button>
-                    </div>
+                     
+                      <div class="mobile pb-10"></div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -140,39 +160,70 @@
             <div class=" flex h-full">
                 <div class="self-center flex max-w-screen-xl w-[80vw] mx-auto">
                     <div class="w-2/3 mr-auto self-center">
-                        <h1 class="text-[50px] text-white font-bold font-Roboto">Choose what's right for you, </h1>
-                        <h1 class="text-[50px] text-[#FF9415] mt-2 font-Rochester">Right Here</h1>
-                        <p class="text-white text-lg my-4">An online education platform that helps you pick online degrees
+                        <div class="desktop">
+                            <h1 class="text-[50px] text-white font-bold font-Roboto">Choose what's right for you, </h1>
+                            <h1 class="text-[50px] text-[#FF9415] mt-2 font-Rochester">Right Here</h1>
+                            <p class="text-white text-lg my-4">An online education platform that helps you pick online degrees
+                                and certificates
+                                <br /> from the best Universities.
+                            </p>
+                        </div>
+                        <div class="mobile pt-10">
+                           <p class="text-[22px] text-white font-bold font-Roboto">Choose what's right for you, <span class="text-[22px] text-[#FF9415] mt-2 font-Rochester">Right Here</span></p>
+                           <p class="text-white text-base my-4">An online education platform that helps you pick online degrees
                             and certificates
                             <br /> from the best Universities.
                         </p>
-                            <div class="flex w-[60%] bg-white p-2 mb-3 justify-between rounded-full">
-                                <div class="relative">
-                                    <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
-                                        <p class="text-white">Master </p><img src="./image/down.png" class="ml-1" alt="down"/>
-                                    </button>
-                                    <div id="Master-menu"
-                                        class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
-                                    </div>
-                                </div>
-                                <input type="text" class="w-[500px] p-2 focus:outline-none outline-none" placeholder="What do you want to learn?" />
-                                <img src="./image/Vector.svg" class="w-6 h-6 self-center" alt="search" />
-                            </div>
+                        </div>
+                         <div class="desktop">
+                             <div class="flex w-[60%] bg-white p-2 mb-3 justify-between rounded-full">
+                                 <div class="relative">
+                                     <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
+                                         <p class="text-white">Master</p><img src="./image/down.png" class="ml-1" alt="down"/>
+                                     </button>
+                                     <div id="Master-menu"
+                                         class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+                                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+                                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+                                     </div>
+                                 </div>
+                                 <input type="text" class="w-[500px] p-2 focus:outline-none outline-none" placeholder="What do you want to learn?" />
+                                 <img src="./image/Vector.svg" class="w-6 h-6 self-center" alt="search" />
+                             </div>
+                         </div>
                             <button class="uppercase rounded-full text-white bg-[#F47B47] mt-4 font-semibold border border-[#fffff] px-6 py-3">Enquire Now</button>
-                    </div>
+                      
+                      <div class="mobile pb-10"></div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="mobile absolute z-[99] w-full">
+        <div class="flex w-[60%] mx-auto mt-[-25px] bg-white p-2 mb-3 justify-between rounded-full">
+            <div class="relative">
+                <button id="Master-button" class="flex mr-3 items-center space-x-2 px-4 py-2 bg-[#FF9415] rounded-full">
+                    <p class="text-white">Master</p><img src="./image/down.png" class="ml-1" alt="down"/>
+                </button>
+                <div id="Master-menu"
+                    class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+                </div>
+            </div>
+            <input type="text" class="w-full p-2 focus:outline-none outline-none" placeholder="What do you want to learn?" />
+            <img src="./image/Vector.svg" class="w-6 h-6 self-center" alt="search" />
+        </div>
+      </div>
     <div class="max-w-screen-xl mx-auto py-10">
     <div class="flex justify-center">
         <h1 class="font-Roboto text-center text-2xl font-bold  bg-[url(./image/labelbg.png)] bg-no-repeat pb-4 bg-right-bottom">Reasons To Choose Learn.online</h1>
     </div>
-        <div class="grid grid-cols-6 gap-0">
+    <div class="desktop">
+
+        <div class="grid  lg:grid-cols-6 md:grid-cols-1 gap-0">
             <div class="flex">
                <div class="self-center text-center">
                     <p class="text-lg font-semibold text-[#143BFF] font-Roboto">Curation</p>
@@ -205,6 +256,50 @@
             </div>
             <div class="flex ">
                 <img src="./image/apply (4).png" class="self-end mb-[17px]" alt="apply" />
+            </div>
+            <div class="flex">
+                <div class="self-center text-center">
+                     <p class="text-lg font-semibold text-[#143BFF] font-Roboto">Career</p>
+                     <p class="text-base font-Roboto">Different career pathways to help you progress in the right
+                   </p>
+                </div>
+             </div>
+          </div>
+    </div>
+          <div class="grid mobile curation grid-cols-2 gap-0">
+            <div class="flex">
+               <div class="self-center text-center">
+                    <p class="text-lg font-semibold text-[#143BFF] font-Roboto">Curation</p>
+                    <p class="text-base font-Roboto">Detailed analysis of programs and their offerings
+                  </p>
+               </div>
+            </div>
+            <div class=" self-end">
+              <img src="./image/mobile_online (4).png" class="w-full" alt="apply" />
+            </div>
+            <img src="./image/mobile_online (3).png" class=" w-full" alt="apply1"/>
+            <div>
+                <div class="flex my-8">
+                    <div class="self-center text-center">
+                         <p class="text-lg font-semibold text-[#143BFF] font-Roboto">Choice</p>
+                         <p class="text-base font-Roboto">Choose from a host of different renowned institutions and a vast array of programs
+                       </p>
+                    </div>
+                 </div>
+            </div>
+            <div>
+                <div class="flex mb-9 mt-3">
+                    <div class="self-center text-center">
+                         <p class="text-lg font-semibold text-[#143BFF] font-Roboto">Counseling</p>
+                         <p class="text-base font-Roboto">Counselors from Universities to guide you make a choice     </p>
+                    </div>
+                 </div>
+                 
+                 
+                </div>
+                <img src="./image/mobile_online (2).png" class=" w-full" alt="apply1"/>
+            <div class="flex ">
+                <img src="./image/mobile_online (1).png" class="w-full " alt="apply" />
             </div>
             <div class="flex">
                 <div class="self-center text-center">
@@ -256,8 +351,8 @@
     </div>
 
     <div class="max-w-screen-xl mx-auto py-10">
-        <div class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 gap-2 pt-10">
-            <div class="col-span-1">
+        <div class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 University  gap-2 pt-10">
+            <div class="lg:col-span-1">
                 <div class="border text-center box-shadow border-[#DBDBDB] p-3 rounded-lg mb-[23%]">
                     <img src="./image/education.png" class="mx-auto -mt-[24%]" alt="educations" />
                     <p class="text-base font-Roboto font-semibold">52 Courses</p>
@@ -379,28 +474,28 @@
                     <p
                         class="text-white text-center w-[20%] mx-auto mt-4 font-bold text-3xl font-Roboto border-b border-[#FF9415]">
                         30+</p>
-                    <p class="text-white text-center font-bold text-2xl mt-2 font-Roboto">Online Programs</p>
+                    <p class="text-white text-center font-bold text-2xl online mt-2 font-Roboto">Online Programs</p>
                 </div>
                 <div class="col-span-4 text-center">
                     <img src="./image/Mask1.png" class="mx-auto mask" alt="mask" />
                     <p
                         class="text-white text-center w-[20%] mx-auto mt-4 font-bold text-3xl font-Roboto border-b border-[#FF9415]">
                         100+</p>
-                    <p class="text-white text-center font-bold text-2xl mt-2 font-Roboto">Specializations / Electives</p>
+                    <p class="text-white text-center font-bold text-2xl online mt-2 font-Roboto">Specializations / Electives</p>
                 </div>
                 <div class="col-span-4 text-center">
                     <img src="./image/Mask2.png" class="mx-auto mask" alt="mask" />
                     <p
                         class="text-white text-center w-[20%] mx-auto mt-4 font-bold text-3xl font-Roboto border-b border-[#FF9415]">
                         50K+</p>
-                    <p class="text-white text-center font-bold text-2xl mt-2 font-Roboto">Learners</p>
+                    <p class="text-white text-center font-bold text-2xl online mt-2 font-Roboto">Learners</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="max-w-screen-xl mx-auto py-10 px-10">
-        <div class="flex justify-between pb-5 w-full">
+        <div class="flex justify-between pb-5 w-full mx-auto">
             <p class="text-center text-3xl font-Roboto font-bold bg-[url(./image/labelbg.png)] bg-no-repeat pb-3 bg-right-bottom text-[#333333]">Other Universities to Consider</p>
              <div class="desktop">
                  <button class="py-2 px-5 border border-[#FF9415] text-[#FF9415] rounded-full">VIEW MORE</button>
@@ -691,6 +786,20 @@
 
 
 <script src="scripts.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('toggleButton');
+    const div = document.getElementById('toggleDiv');
+
+    button.addEventListener('click', function() {
+        if (div.classList.contains('hidden')) {
+            div.classList.remove('hidden');
+        } else {
+            div.classList.add('hidden');
+        }
+    });
+});
+</script>
 </body>
 
 </html>
